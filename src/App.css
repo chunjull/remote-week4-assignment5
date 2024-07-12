@@ -1,0 +1,23 @@
+*, 
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: whitesmoke;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.counterContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.counterContainer ~ .counterContainer {
+	padding-top: 24px;
+}
