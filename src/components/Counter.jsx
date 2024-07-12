@@ -35,15 +35,15 @@ function Counter() {
     <div className="counterContainer">
       <button onClick={ incrementAll }>All + 1</button>
     </div>
-    {counts.map((count, index) => (
+    { counts.map((count, index) => (
       <SingleCounter 
-        key={index} 
-        count={count} 
+        key={ index } 
+        count={ count } 
         increment={() => incrementSingle(index)} 
       />
-    ))}
+    )) }
     <div className="counterContainer">
-      <button onClick={addCounter}>Add a Counter</button>
+      <button onClick={ addCounter }>Add a Counter</button>
     </div>
     </>
   );
